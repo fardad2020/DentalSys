@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="Model.Person" table="PERSON">
+        <id column="ID" name="id" type="java.lang.Long"/>
+        <property column="FIRSTNAME" name="firstName" type="java.lang.String"/>
+        <property column="LASTNAME" name="lastName" type="java.lang.String"/>
+        <property column="NATIONALCODE" name="nationalCode" type="java.lang.String"/>
+        <property column="PHONE" name="phone" type="java.lang.String"/>
+        <property column="ADDRESS" name="address" type="java.lang.String"/>
+    </class>
+</hibernate-mapping>

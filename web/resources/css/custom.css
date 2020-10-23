@@ -1,0 +1,59 @@
+body {
+    background-color: #ffffff;
+    overflow-x: hidden;
+}
+
+.head {
+    background-repeat: repeat-x;
+    background-image: -webkit-linear-gradient(90deg, #ffffff, #ffffff);
+    background-image: -o-linear-gradient(90deg, #ffffff, #ffffff);
+    background-image: linear-gradient(90deg, #ffffff, #ffffff);
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+
+}
+
+.bg-color {
+    width: 100%;
+    height: 100%;
+    display: inline-table;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    background-image: url('../img/dental-gal.jpg');
+    z-index: 1;
+}
+
+.bg-color::before {
+    content: "";
+    display: block;
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: #005bea;
+    background: -webkit-linear-gradient(left, #005bea, #00c6fb);
+    background: -o-linear-gradient(left, #005bea, #00c6fb);
+    background: -moz-linear-gradient(left, #005bea, #00c6fb);
+    background: linear-gradient(left, #005bea, #00c6fb);
+    -webkit-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    transition: all 0.4s;
+    opacity: 0.5;
+}
+
+.img {
+    background-image: url('../img/dental-gal.jpg');
+}
